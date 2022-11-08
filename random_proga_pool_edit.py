@@ -98,7 +98,7 @@ def pool_peaks2(peak_i):
     elif peak < 70:
         N_gauss = 20
     else:
-        N_gauss = 15
+        N_gauss = 20
     xn, wn = np.polynomial.legendre.leggauss(N_gauss)
     deltan = (peak+phi_min(peak))/2 + (peak-phi_min(peak))*xn/2
     tmp_assy = np.zeros(len(theta2[a:b]))
